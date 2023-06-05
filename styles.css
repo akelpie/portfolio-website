@@ -1,0 +1,146 @@
+
+* {
+    --color-background: #dad7cd;
+    --color-primary: #3a5a40;
+    --color-primary-dark: #1b2b1e;
+    --color-secondary: #b5c49c;
+    --color-accent: #588157;
+    --color-text: #344e41;
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*
+Header of the website
+*/
+.header {
+    width: 100%;
+    height: 60px;
+    display: block;
+    background-color: var(--color-background);
+}
+
+.inner__header {
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.navigation {
+    float: right; 
+    height: 100%;
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+navigation a:last-child {
+    padding-right: 0;
+}
+
+.navigation a li {
+    display: table-cell; 
+    vertical-align: middle; 
+    height: 100%;
+    color: var(--color-text); 
+    font-family: Courier New, 'Courier', monospace;
+    font: 900px;
+    font-size: 17px;
+    transition: transform 0.2s;
+}
+
+.navigation a li:hover {
+    transform: scale(1.2);
+}
+
+/* 
+Container with introduction
+*/
+
+.introduction{
+    height: 800px;
+}
+
+.introduction__content {
+    background-color: var(--color-background);
+    height: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; 
+    padding: 300px
+}
+
+.introduction__content h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    /* animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite; */
+
+    animation: cursor 6s steps(40);
+}
+
+/* The typing effect */
+/* @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+} */
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+} */
+
+
+@keyframes cursor {
+    0% {
+        width: 0ch;
+    } 
+    100% {
+        width: 50ch;
+    }    
+}
+
+.introduction__content-languages {
+    padding: 40px 0px 500px 50px;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.progress {
+    position: relative;
+    text-align: right;
+    margin-top: 50px;
+    width: 800px; 
+    height: 30px;
+    background: var(--color-primary-dark); 
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress__fill {
+    width: 25%;
+    height: 100%;
+    background: var(--color-secondary)
+}
+.progress__text {
+    position: absolute; 
+    top: 50%; 
+    right: 5px; 
+    transform: translateY(-50%);
+    font: bold 14px 
+}
