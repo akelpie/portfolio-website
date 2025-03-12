@@ -17,11 +17,8 @@ const ProjectDetailsScreen = () => {
           <h2>{project.name}</h2>
           <p>{project.description}</p>
           <p><strong>Technologies:</strong> {project.technologies}</p>
-          <Button variant="primary" href={project.github} target="_blank" rel="noopener noreferrer">
+          <Button variant="light" href={project.github} target="_blank" rel="noopener noreferrer">
             GitHub
-          </Button>
-          <Button variant="secondary" href={project.demo} target="_blank" rel="noopener noreferrer" className="ms-2">
-            Demo
           </Button>
         </Col>
       </Row>
