@@ -4,7 +4,8 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
-  RouterProvider,
+	RouterProvider,
+  BrowserRouter,
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
@@ -31,7 +32,9 @@ const router = createBrowserRouter(
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter basename="/portfolio-website">
+      <RouterProvider router={router} />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
