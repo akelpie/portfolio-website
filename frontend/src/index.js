@@ -4,7 +4,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
-  RouterProvider
+  RouterProvider,
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
@@ -18,12 +18,15 @@ import ResumeScreen from "./screens/ResumeScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      <Route index={true} path="/" element={<HomeScreen />} />
-      <Route path="/projects" element={<ProjectScreen />} />
-      <Route path="/projects/:id" element={<ProjectDetailsScreen />} />
-      <Route path="/contact" element={<ContactScreen />} />
-      <Route path="/resume" element={<ResumeScreen />} />
+    <Route path="/portfolio-website" element={<App />}>
+      <Route
+        index
+        element={<HomeScreen />}
+      />
+      <Route path="projects" element={<ProjectScreen />} />
+      <Route path="project/:id" element={<ProjectDetailsScreen />} />
+      <Route path="contact" element={<ContactScreen />} />
+      <Route path="resume" element={<ResumeScreen />} />
     </Route>
   )
 );
