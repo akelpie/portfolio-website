@@ -4,12 +4,12 @@ const projects = [
     name: "Hogwarts Express Trolley Menu",
     description: "Ecommerce website built using MERN stack",
     category: "Full Stack",
-		technologies: ["C++"],
+		technologies: ["C++ "],
 	 github: "https://github.com/akelpie/cop-3014-programming-1",
     demo: "https://mern-ecommerce-website.herokuapp.com/",
   },
   {
-    _id: "1",
+    _id: "2",
     name: "MERN Ecommerce",
     description: "Ecommerce website built using MERN stack",
     category: "Full Stack",
@@ -17,7 +17,7 @@ const projects = [
     demo: "https://mern-ecommerce-website.herokuapp.com/",
   },
   {
-    _id: "1",
+    _id: "3",
     name: "MERN Ecommerce",
     description: "Ecommerce website built using MERN stack",
     category: "Full Stack",
@@ -25,7 +25,7 @@ const projects = [
     demo: "https://mern-ecommerce-website.herokuapp.com/",
   },
   {
-    _id: "1",
+    _id: "4",
     name: "MERN Ecommerce",
     description: "Ecommerce website built using MERN stack",
     category: "Full Stack",
@@ -33,7 +33,7 @@ const projects = [
     demo: "https://mern-ecommerce-website.herokuapp.com/",
   },
   {
-    _id: "1",
+    _id: "5",
     name: "MERN Ecommerce",
     description: "Ecommerce website built using MERN stack",
     category: "Full Stack",
