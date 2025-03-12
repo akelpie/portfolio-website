@@ -4,8 +4,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
-	RouterProvider,
-  BrowserRouter,
+  RouterProvider
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
@@ -15,7 +14,6 @@ import HomeScreen from "./screens/HomeScreen";
 import ProjectScreen from "./screens/ProjectScreen";
 import ContactScreen from "./screens/ContactScreen";
 import ResumeScreen from "./screens/ResumeScreen";
-import ProjectDetailsScreen from "./screens/ProjectDetailsScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,7 +22,6 @@ const router = createBrowserRouter(
       <Route path="/projects" element={<ProjectScreen />} />
       <Route path="/contact" element={<ContactScreen />} />
       <Route path="/resume" element={<ResumeScreen />} />
-      <Route path="/projects/:id" element={<ProjectDetailsScreen />} />
     </Route>
   )
 );
@@ -32,9 +29,7 @@ const router = createBrowserRouter(
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/portfolio-website">
       <RouterProvider router={router} />
-    </BrowserRouter>
   </React.StrictMode>
 );
 

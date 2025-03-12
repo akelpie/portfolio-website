@@ -93,7 +93,7 @@ const ContactScreen = () => {
           />
         </Form.Group>
 
-        <Button variant="secondary" type="submit">
+        <Button variant="primary" type="submit">
           Send
         </Button>
       </Form>
