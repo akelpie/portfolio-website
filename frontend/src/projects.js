@@ -1,10 +1,11 @@
 const projects = [
   {
     _id: "1",
-    name: "MERN Ecommerce",
+    name: "Hogwarts Express Trolley Menu",
     description: "Ecommerce website built using MERN stack",
     category: "Full Stack",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+		technologies: ["C++"],
+	 github: "https://github.com/akelpie/cop-3014-programming-1",
     demo: "https://mern-ecommerce-website.herokuapp.com/",
   },
   {
