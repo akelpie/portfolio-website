@@ -7,7 +7,8 @@ const HomeScreen = () => {
       <Row>
         <Col md={6}>
           <Image
-            src={`${process.env.PUBLIC_URL}/images/my-notion-face-portrait.png`}
+            // src={`${process.env.PUBLIC_URL}/images/my-notion-face-portrait.png`}
+            src={`${process.env.PUBLIC_URL}/images/ProfilePic.jpg`}
             alt="Jasmine Masopeh"
             fluid
           />
