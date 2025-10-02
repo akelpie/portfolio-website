@@ -6,7 +6,7 @@ const ResumeScreen = () => {
     <Container>
       <h1>My Resume</h1>
       <iframe
-        src="pdfs/resume.pdf"
+        src="pdfs/Jasmine_Masopeh_CV.pdf"
         width="100%"
         height="600px"
         title="Resume"
